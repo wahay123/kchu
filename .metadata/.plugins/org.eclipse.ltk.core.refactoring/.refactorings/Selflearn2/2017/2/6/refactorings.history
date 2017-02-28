@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Selflearn2/src/InfixReader (2).java&apos; to &apos;InfixReader.java&apos;" description="Rename resource &apos;InfixReader (2).java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/InfixReader (2).java" name="InfixReader.java" stamp="1486361085231" updateReferences="true"/>
+</session>

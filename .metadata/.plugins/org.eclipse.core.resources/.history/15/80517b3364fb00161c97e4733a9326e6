@@ -1,0 +1,17 @@
+
+public abstract class Ingredient {
+	private String name;
+	private int volume;
+	
+
+	
+	public void add(){
+		
+	}
+
+
+
+
+	
+}
+

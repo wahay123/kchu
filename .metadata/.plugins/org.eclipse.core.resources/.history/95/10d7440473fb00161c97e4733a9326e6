@@ -1,0 +1,31 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Orange extends Ingredient {
+	int randomNum = ThreadLocalRandom.current().nextInt(50, 60 + 1);
+
+	public Orange(String name, int vol) {
+		this.setName(name);
+		this.setVol(randomNum);
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setVol(int vol) {
+		this.vol = vol;
+	}
+
+	public int getVol() {
+		return vol;
+	}
+
+	public void add() {
+
+	}
+
+}

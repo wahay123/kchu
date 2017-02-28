@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class SmoothieShop {
+	public static void main(String args[]) {
+		IngredientScanner scan1 = new IngredientScanner();
+		int input = -1;
+		ArrayList<Ingredient> IngredientList = new ArrayList<Ingredient>();
+		SmoothieShop ss = new SmoothieShop();
+		ss.start();
+		ss.again(input, scan1, IngredientList);
+
+	}
+
+	public static ArrayList start() {
+		ArrayList<Ingredient> al = ingredients();
+
+		for (Ingredient j : al) {
+			int i = al.indexOf(j) + 1;
+			System.out.println(i + ". " + j.getName());
+
+		}
+		System.out.println("What would you like to add to your smoothie?");
+		return al;
+	}
+
+	public static ArrayList ingredients() {
+		ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
+		Ingredient apple = new Apple("Apple", 50);
+
+		Ingredient orange = new Orange("Orange", 70);
+
+		ingredients.add(apple);
+		ingredients.add(orange);
+
+		return ingredients;
+
+	}
+
+	public static void again(int input, IngredientScanner scan1, ArrayList<Ingredient> iList) {
+		scan1.test(input, iList);
+	}
+}

@@ -1,0 +1,4 @@
+	public Watermelon(String name, int vol){
+		this.setName(name);
+		this.setVol(vol);
+	}

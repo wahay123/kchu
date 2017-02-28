@@ -1,0 +1,20 @@
+
+public abstract class Ingredient {
+	private String name;
+	private int vol;
+	
+
+	
+	abstract void add();
+	abstract void setName(String name);
+	abstract String getName();
+	abstract void setVol(int vol);
+	abstract int getVol();
+	
+	
+
+
+
+	
+}
+

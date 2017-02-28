@@ -1,0 +1,5 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Trial2 {
+	int randomNum = ThreadLocalRandom.current().nextInt(50, 70 + 1);
+}

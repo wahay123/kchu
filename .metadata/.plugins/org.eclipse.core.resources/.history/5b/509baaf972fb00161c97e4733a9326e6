@@ -1,0 +1,28 @@
+
+public class Vanilla extends Ingredient {
+	public Vanilla(String name, int vol) {
+		this.setName(name);
+		this.setVol(vol);
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setVol(int vol) {
+		this.vol = vol;
+	}
+
+	public int getVol() {
+		return vol;
+	}
+
+	public void add() {
+
+	}
+
+}

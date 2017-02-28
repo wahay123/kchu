@@ -1,0 +1,42 @@
+
+public class PlasticCup implements ContainerInterface {
+
+	private String name;
+	private int vol;
+
+	public PlasticCup() {
+		String tempName = "Plastic Cup";
+		this.setName(tempName);
+		int tempVol = 300;
+		this.setVol(tempVol);
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getVol() {
+		return vol;
+	}
+
+	public void setVol(int vol) {
+		this.vol = vol;
+	}
+
+	@Override
+	public int getContainerVol(int temp, int conVol) {
+		return this.getVol();
+
+	}
+
+	@Override
+	public String getContainerName() {
+		return this.getName();
+	}
+
+}

@@ -1,0 +1,10 @@
+
+abstract class Ingredients {
+	private String name;
+	private int volume;
+	
+
+	
+	abstract void add();
+}
+

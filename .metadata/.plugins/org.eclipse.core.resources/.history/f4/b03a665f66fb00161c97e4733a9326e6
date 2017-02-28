@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class SmoothieShop {
+	public static void main(String args[]) {
+
+	}
+
+	public static void start() {
+		ArrayList<Ingredient> al = ingredients();
+		for (Ingredient i : al) {
+			System.out.println(i.getName());
+		}
+	}
+
+	public static ArrayList ingredients() {
+		ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
+		Ingredient apple = new Apple("Apple", 50);
+
+		Ingredient orange = new Orange("Orange", 70);
+
+		ingredients.add(apple);
+		ingredients.add(orange);
+
+		return ingredients;
+
+	}
+}

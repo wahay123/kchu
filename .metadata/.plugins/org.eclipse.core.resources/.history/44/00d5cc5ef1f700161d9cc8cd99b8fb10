@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class ShapeCollection {
+	private ArrayList<Shape> shape_list = new ArrayList<Shape>();
+	Shape triangle = new Triangle(2, 4);
+	Shape circle = new Circle(3);
+
+	public void add(Shape s) {
+		shape_list.add(triangle);
+		shape_list.add(circle);
+	}
+
+	public Shape get(int i) {
+		return shape_list.get(i);
+
+	}
+
+	public float totalArea() {
+		float totalArea = triangle.getArea() + circle.getArea();
+		return totalArea;
+	}
+}

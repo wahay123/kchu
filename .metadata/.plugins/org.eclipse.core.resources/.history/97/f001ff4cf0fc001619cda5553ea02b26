@@ -1,0 +1,7 @@
+
+public abstract class Container implements ContainerInterface{
+	private String name;
+	private int vol;
+	
+	
+}

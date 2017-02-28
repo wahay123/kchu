@@ -1,0 +1,5 @@
+
+public interface ContainerInterface {
+	int getContainerVol(int temp, int conVol);
+	String getContainerName();
+}

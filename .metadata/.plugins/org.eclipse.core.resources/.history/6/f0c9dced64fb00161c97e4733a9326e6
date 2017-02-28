@@ -1,0 +1,14 @@
+
+public class Watermelon extends Ingredient{
+	public Watermelon(){
+		
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+
+	
+	
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class IngredientScanner {
+	private Scanner keyboard = new Scanner(System.in);
+
+	public void test(int input, ArrayList<Ingredient> ingredients) {
+		int num = -1;
+
+		while (num != 0) {
+			System.out.println("Please enter your choice (1-9, or 0 to finish the order) :");
+			num = keyboard.nextInt();
+			if (num == 0) {
+				break;
+			} else if (num == 1 || num == 2 || num == 3 || num == 4 || num == 5 || num == 6 || num == 7 || num == 8
+					|| num == 9) {
+				int i = num - 1;
+				Ingredient retrival = ingredients.get(i);
+				// ingredients.get(i).add();
+				// System.out.println("Added");
+				System.out.println("Added " + retrival.getName() + " " + retrival.getVol() + "ml");
+			}
+
+		}
+
+	}
+}

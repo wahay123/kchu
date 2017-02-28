@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class IngredientScanner {
+	private Scanner keyboard = new Scanner(System.in);
+
+	public void test(int input, ArrayList<Ingredient> ingredients) {
+		int num = -1;
+
+		while (num != 0) {
+			System.out.println("Please enter your choice (1-9, or 0 to finish the order) :");
+			num = keyboard.nextInt();
+			if (num == 0) {
+				break;
+			} else {
+				int i = num - 1;
+				ingredients.get(i).add();
+				System.out.println("Added " + ingredients.get(i).getName() + " " + ingredients.get(i).getVol() + "ml");
+			}
+
+		}
+
+	}
+}
